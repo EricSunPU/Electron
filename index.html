@@ -2,18 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Electron Demo</title>
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/index.css">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
 
+  <body>
+    <div class="text">Elctron Demo</div>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div class="auth-controls">
+            <button class="auth-button" id="auth-window">Sign In / Sign Up</button>
+    </div>
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      //require('assets/css/auth.css')
     </script>
+    <script src="renderer-process/auth.js"></script>
   </body>
 </html>
